@@ -7,10 +7,6 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ${media.lessThan('medium')`
-  flex-direction: column;
-`}
 `;
 
 export default Header;

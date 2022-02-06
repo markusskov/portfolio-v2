@@ -5,6 +5,7 @@ import Navigation from '../components/header/Navbar';
 import Body from '../components/body/Body';
 import Main from '../components/main/Main';
 import Intro from '../components/intro/Intro';
+import Projects from '../components/projects/Projects';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         </Header>
         <Main>
           <Intro />
+          <Projects>PROJECTS CARDS IN HERE</Projects>
         </Main>
       </Body>
     </>
