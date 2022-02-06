@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --font-family: 'Inter', sans-serif;
   
   
-    --font-size-header: clamp(3.5rem, 12vw + 1rem, 12rem);
+    --font-size-header: clamp(4.5rem, 7vw + 1rem, 7rem);
     --font-size-subheader: 2rem;
     --font-size-body: 1rem;
   
@@ -22,14 +22,14 @@ const GlobalStyle = createGlobalStyle`
     --spacing-m-lr: 0 1rem;
   
    
-    --color-primary: hsl(42 100 55 / 100%);
-    --color-primary-darker: hsl(42 100 43 / 100%);
-    --color-secondary: hsl(234 14 15 / 100%);
+    --color-primary: hsl(42 100% 55% / 100%);
+    --color-primary-darker: hsl(42 100% 43% / 100%);
+    --color-secondary: hsl(234 14% 15% / 100%);
   
-    --color-background-top: hsl(235 12 18 / 100%);
-    --color-light-card: hsl(255 11 28 / 100%);
-    --color-white: hsl(0 0 99 / 100%);
-    --color-icon: hsl(234 12 44 / 100%);
+    --color-background-top: hsl(235 12% 18% / 100%);
+    --color-light-card: hsl(255 11% 28% / 100%);
+    --color-white: hsl(0 0% 99% / 100%);
+    --color-icon: hsl(234 12% 44% / 100%);
   
     
     --c-active: var(--color-primary);
