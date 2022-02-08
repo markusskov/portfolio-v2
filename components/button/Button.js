@@ -6,5 +6,6 @@ const PrimaryButton = styled.a`
   background-color: var(--color-secondary);
   display: flex;
   padding: 1rem 3rem;
+  font-weight: var(--font-medium);
 `;
 export default PrimaryButton;

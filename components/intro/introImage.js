@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ImageWrapper = styled.div`
-  width: fit-content;
+  width: 100%;
   max-height: 200px;
   display: flex;
   align-items: center;

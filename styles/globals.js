@@ -5,10 +5,13 @@ const GlobalStyle = createGlobalStyle`
 :root {
     
     --font-family: 'Inter', sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
   
   
     --font-size-header: clamp(4.5rem, 7vw + 1rem, 7rem);
-    --font-size-subheader: 2rem;
+    --font-size-subheader: 1rem;
     --font-size-body: 1rem;
   
    
@@ -59,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
   
   ${media.greaterThan('huge')`
     :root {
-      --font-size-subheader: 3rem;
+      --font-size-subheader: 1.5rem;
       --font-size-body: 1.125rem;
     }`}
   
