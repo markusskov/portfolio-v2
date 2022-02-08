@@ -65,7 +65,7 @@ export default function IntroText() {
       <Para>Student @ Noroff</Para>
       <Para>Junior Developer @ VG</Para>
       <ButtonWrapper>
-        <PrimaryButton href="#">My Work</PrimaryButton>
+        <PrimaryButton href="#projects">My Work</PrimaryButton>
       </ButtonWrapper>
     </TextWrapper>
   );

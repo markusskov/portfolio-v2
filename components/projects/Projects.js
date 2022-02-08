@@ -57,7 +57,7 @@ const Icon = styled.img`
 export default function Projects() {
   return (
     <BottomCard>
-      <H1>Projects</H1>
+      <H1 id="projects">Projects</H1>
       <TopCardsWrapper>
         <TopCards>
           <FlexBetween>
@@ -81,7 +81,7 @@ export default function Projects() {
               <Icon src="/images/js.svg" alt="js" />
             </Icons>
             <BodyText>
-              <a href="">View Website &gt; </a>
+              <a href="https://cryptonation.netlify.app/">View Website &gt; </a>
             </BodyText>
           </IconWrapper>
         </TopCards>
@@ -106,7 +106,7 @@ export default function Projects() {
               <Icon src="/images/js.svg" alt="js" />
             </Icons>
             <BodyText>
-              <a href="">View Website &gt; </a>
+              <a href="https://shoue.netlify.app/">View Website &gt; </a>
             </BodyText>
           </IconWrapper>
         </TopCards>
