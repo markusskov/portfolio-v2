@@ -6,7 +6,7 @@ import IntroImage from './introImage';
 const IntroWrapper = styled.div`
   margin-top: 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   gap: 2rem;
