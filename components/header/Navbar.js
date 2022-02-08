@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import NavItems from './NavLinks';
 
 const navlinks = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Home', href: '#nav', current: true },
+  { name: 'Projects', href: '#projects', current: false },
   { name: 'Skills', href: '#', current: false },
   { name: 'About', href: '#', current: false },
 ];

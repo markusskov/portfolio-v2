@@ -5,18 +5,18 @@ import TopCards from './TopCard';
 import Work from './Work';
 import CardTitle from '../text/CardTitle';
 import BodyText from '../text/BodyText';
+import CardText from '../text/cardText';
 
 const BottomCard = styled.div`
-  margin: 1rem;
+  margin: 2rem 1rem;
   background-color: var(--color-background-top);
   border-radius: 15px;
   padding: 1rem;
 `;
 
 const TopCardsWrapper = styled.div`
-  margin: 1rem;
+  margin: 1rem 0;
   border-radius: 15px;
-  padding: 1rem;
   display: flex;
   gap: var(--flex-gap);
 
@@ -38,11 +38,9 @@ const FlexColumn = styled.div`
 
 const IconWrapper = styled.div`
   display: flex;
-  align-items: center;
-
+  margin-top: 2rem;
   ${media.lessThan('medium')`
   flex-direction: column;
-  align-items: center;
   
 `}
 `;
@@ -52,12 +50,17 @@ const Icons = styled.div`
 `;
 
 const Icon = styled.img`
-  margin: 5px;
+  padding-right: 15px;
+  margin-bottom: 0.5rem;
+  ${media.lessThan('medium')`
+  padding-right: 5px;
+  
+`}
 `;
 export default function Projects() {
   return (
-    <BottomCard>
-      <H1 id="projects">Projects</H1>
+    <BottomCard id="projects">
+      <H1>Projects</H1>
       <TopCardsWrapper>
         <TopCards>
           <FlexBetween>
@@ -69,20 +72,25 @@ export default function Projects() {
               <img src="/images/github.svg" alt="github" />
             </a>
           </FlexBetween>
-          <BodyText>
+          <CardText>
             Cryptionation is a crupto currency tracker buildt with HTML, SCSS &
             Javascript. It fetches data in real time for updated values on the
             top 100 coins.
-          </BodyText>
+          </CardText>
           <IconWrapper>
             <Icons>
               <Icon src="/images/html.svg" alt="html" />
               <Icon src="/images/css.svg" alt="css" />
               <Icon src="/images/js.svg" alt="js" />
             </Icons>
-            <BodyText>
-              <a href="https://cryptonation.netlify.app/">View Website &gt; </a>
-            </BodyText>
+            <CardText>
+              <a
+                href="https://cryptonation.netlify.app/"
+                style={{ textDecoration: 'underline' }}
+              >
+                View Website &gt;{' '}
+              </a>
+            </CardText>
           </IconWrapper>
         </TopCards>
         <TopCards>
@@ -95,19 +103,24 @@ export default function Projects() {
               <img src="/images/github.svg" alt="github" />
             </a>
           </FlexBetween>
-          <BodyText>
+          <CardText>
             Shoue is a e-commerce store built with HTML, SCSS and Javascript on
-            the front end. Strapi and Heroku for back end.
-          </BodyText>
+            the front end. Uses Strapi and Heroku for the backend to get items.
+          </CardText>
           <IconWrapper>
             <Icons>
               <Icon src="/images/html.svg" alt="html" />
               <Icon src="/images/css.svg" alt="css" />
               <Icon src="/images/js.svg" alt="js" />
             </Icons>
-            <BodyText>
-              <a href="https://shoue.netlify.app/">View Website &gt; </a>
-            </BodyText>
+            <CardText>
+              <a
+                href="https://shoue.netlify.app/"
+                style={{ textDecoration: 'underline' }}
+              >
+                View Website &gt;{' '}
+              </a>
+            </CardText>
           </IconWrapper>
         </TopCards>
       </TopCardsWrapper>

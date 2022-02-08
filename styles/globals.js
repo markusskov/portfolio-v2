@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     --font-bold: 700;
   
   
-    --font-size-header: clamp(4.5rem, 7vw + 1rem, 7rem);
+    --font-size-header: clamp(4.5rem, 3vw + 1rem, 7rem);
     --font-size-subheader: 1rem;
     --font-size-body: 1rem;
   
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     --color-secondary: hsl(234 14% 15% / 100%);
   
     --color-background-top: hsl(235 12% 18% / 100%);
-    --color-light-card: hsl(255 11% 28% / 100%);
+    --color-light-card: hsl(245 17% 28% / 20%);
     --color-white: hsl(0 0% 99% / 100%);
     --color-icon: hsl(234 12% 44% / 100%);
   

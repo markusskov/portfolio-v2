@@ -22,7 +22,7 @@ export default function Home() {
         </Header>
         <Main>
           <Intro />
-          <Projects>PROJECTS CARDS IN HERE</Projects>
+          <Projects />
         </Main>
       </Body>
     </>

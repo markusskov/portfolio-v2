@@ -58,7 +58,6 @@ export default function IntroText() {
   return (
     <TextWrapper>
       <H1>Hi, Im Markus</H1>
-      <BigSeparator />
       <H2>
         <b>Front-end developer & Graphic Designer</b>
       </H2>
