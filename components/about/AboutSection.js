@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import IntroText from './IntroText';
-import IntroImage from './introImage';
+import IntroImage from '../intro/IntroImage';
+import AboutText from './AboutText';
 
 const IntroWrapper = styled.div`
   margin-top: 3rem;
@@ -17,10 +17,10 @@ const IntroWrapper = styled.div`
 `}
 `;
 
-export default function Intro() {
+export default function AboutSection() {
   return (
     <IntroWrapper>
-      <IntroText />
+      <AboutText />
       <IntroImage />
     </IntroWrapper>
   );

@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import NavItems from './NavLinks';
+import Link from 'next/link';
 
 const navlinks = [
-  { name: 'Home', href: '#nav', current: true },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Skills', href: '#', current: false },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/#', current: true },
+  { name: 'Projects', href: '/#projects', current: false },
+  { name: 'Skills', href: '/#skills', current: false },
+  { name: 'About', href: '/about', current: false },
 ];
 
 export default function Navigation() {

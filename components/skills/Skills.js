@@ -39,7 +39,7 @@ const Icon = styled.img`
 
 export default function Skills() {
   return (
-    <Wrapper>
+    <Wrapper id="skills">
       <H1>Skills</H1>
       <CardWrapper>
         <TopCards>
