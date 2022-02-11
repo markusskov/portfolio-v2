@@ -7,7 +7,7 @@ import CardTitle from '../text/CardTitle';
 import CardText from '../text/cardText';
 import CardWrapper from '../cards/CardWrapper';
 
-const BottomCard = styled.div`
+const BottomCard = styled.section`
   margin: 2rem 1rem;
   border-radius: 15px;
   padding: 1rem;

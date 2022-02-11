@@ -5,7 +5,7 @@ import TopCards from '../cards/TopCard';
 import CardText from '../text/cardText';
 import H1 from '../text/Title';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   margin: 2rem 1rem;
   padding: 1rem;
 `;

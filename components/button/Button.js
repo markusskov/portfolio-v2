@@ -10,5 +10,6 @@ const Button = styled.a`
   display: flex;
   padding: 1rem 3rem;
   font-weight: var(--font-medium);
+  border-radius: 15px;
 `;
 export default Button;
