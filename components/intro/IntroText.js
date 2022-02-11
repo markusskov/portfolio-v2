@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import PrimaryButton from '../button/Button';
+import Button from '../button/Button';
 import H1 from '../text/Title';
 
 const TextWrapper = styled.div`
@@ -48,12 +48,6 @@ const ButtonWrapper = styled.div`
 `}
 `;
 
-const BigSeparator = styled.div`
-  width: 100%;
-  height: 7px;
-  background-color: var(--color-primary);
-`;
-
 export default function IntroText() {
   return (
     <TextWrapper>
@@ -64,7 +58,7 @@ export default function IntroText() {
       <Para>Student @ Noroff</Para>
       <Para>Junior Developer @ VG</Para>
       <ButtonWrapper>
-        <PrimaryButton href="#projects">My Work</PrimaryButton>
+        <Button href="#projects">My Work</Button>
       </ButtonWrapper>
     </TextWrapper>
   );
