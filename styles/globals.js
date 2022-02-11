@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
     --font-bold: 700;
   
   
-    --font-size-header: clamp(4.5rem, 3vw + 1rem, 7rem);
-    --font-size-subheader: 1rem;
+    --font-size-header: clamp(3rem, 2vw + 1rem, 5rem);
+    --font-size-subheader: 1.25rem;
     --font-size-body: 1rem;
   
    
@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
   ${media.greaterThan('huge')`
     :root {
       --font-size-subheader: 1.5rem;
-      --font-size-body: 1.125rem;
+      --font-size-body: 1.1rem;
     }`}
   
   

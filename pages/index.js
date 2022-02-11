@@ -6,6 +6,7 @@ import Body from '../components/body/Body';
 import Main from '../components/main/Main';
 import Intro from '../components/intro/Intro';
 import Projects from '../components/projects/Projects';
+import Skills from '../components/skills/Skills';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Main>
           <Intro />
           <Projects />
+          <Skills />
         </Main>
       </Body>
     </>

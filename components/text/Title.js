@@ -7,7 +7,7 @@ const H1 = styled.h1`
   font-weight: var(--font-bold);
   color: var(--color-white);
   margin: 0.5rem 0;
-  border-bottom: 2px solid var(--color-primary);
+  text-decoration: underline 2px solid var(--color-primary);
   ${media.lessThan('medium')`
   text-align:center;
   

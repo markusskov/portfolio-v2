@@ -1,29 +1,16 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import H1 from '../text/Title';
-import TopCards from './TopCard';
+import TopCards from '../cards/TopCard';
 import Work from './Work';
 import CardTitle from '../text/CardTitle';
-import BodyText from '../text/BodyText';
 import CardText from '../text/cardText';
+import CardWrapper from '../cards/CardWrapper';
 
 const BottomCard = styled.div`
   margin: 2rem 1rem;
-  background-color: var(--color-background-top);
   border-radius: 15px;
   padding: 1rem;
-`;
-
-const TopCardsWrapper = styled.div`
-  margin: 1rem 0;
-  border-radius: 15px;
-  display: flex;
-  gap: var(--flex-gap);
-
-  ${media.lessThan('medium')`
-  flex-direction: column;
-  
-`}
 `;
 
 const FlexBetween = styled.div`
@@ -61,7 +48,7 @@ export default function Projects() {
   return (
     <BottomCard id="projects">
       <H1>Projects</H1>
-      <TopCardsWrapper>
+      <CardWrapper>
         <TopCards>
           <FlexBetween>
             <FlexColumn>
@@ -69,7 +56,7 @@ export default function Projects() {
               <CardTitle>CryptoNation Website</CardTitle>
             </FlexColumn>
             <a href="https://github.com/markusskov/cryptoNation">
-              <img src="/images/github.svg" alt="github" />
+              <Icon src="/images/github.svg" alt="github" />
             </a>
           </FlexBetween>
           <CardText>
@@ -100,7 +87,7 @@ export default function Projects() {
               <CardTitle>Shoue Ecommerse Website</CardTitle>
             </FlexColumn>
             <a href="https://github.com/markusskov/shoue">
-              <img src="/images/github.svg" alt="github" />
+              <Icon src="/images/github.svg" alt="github" />
             </a>
           </FlexBetween>
           <CardText>
@@ -123,7 +110,7 @@ export default function Projects() {
             </CardText>
           </IconWrapper>
         </TopCards>
-      </TopCardsWrapper>
+      </CardWrapper>
     </BottomCard>
   );
 }
