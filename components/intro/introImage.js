@@ -17,7 +17,7 @@ const Image = styled.img`
 export default function IntroImage() {
   return (
     <ImageWrapper>
-      <Image src="/images/introImage.png" alt="Intro Image" />
+      <Image src="/images/introImage.png" alt="Intro-Image" />
     </ImageWrapper>
   );
 }
