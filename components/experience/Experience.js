@@ -22,21 +22,6 @@ const FlexColumn = styled.div`
   justify-content: center;
 `;
 
-const Skill = styled.h3`
-  color: var(--color-primary);
-  font-size: var(--font-size-subheader);
-`;
-
-const Icon = styled.img`
-  padding-right: 15px;
-  margin-bottom: 0.5rem;
-  height: 30px;
-  ${media.lessThan('medium')`
-  padding-right: 5px;
-  
-`};
-`;
-
 export default function Experience() {
   return (
     <Wrapper id="experience">

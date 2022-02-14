@@ -8,6 +8,9 @@ const CardText = styled.p`
   line-height: 22px;
   margin-top: 1rem;
   
-`;
+  :hover {
+    color: ${(props) =>
+      props.YellowHover ? 'var(--color-primary)' : 'var(--color-white)'};
+  }`;
 
 export default CardText;

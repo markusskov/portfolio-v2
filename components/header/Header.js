@@ -5,8 +5,12 @@ const Header = styled.header`
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  ${media.lessThan('medium')`
+  justify-content: center;
+  
+`}
 `;
 
 export default Header;

@@ -26,6 +26,8 @@ const Icon = styled.img`
   margin-bottom: 0.5rem;
   height: 30px;
   align-self: center;
+  z-index: 3;
+  }
 `;
 
 export default function SoMe() {
@@ -37,8 +39,8 @@ export default function SoMe() {
           <a href="https://no.linkedin.com/in/markusskov">
             <FlexBetween>
               <FlexColumn>
-                <Icon src="/images/linkedin.svg" alt="html" />
-                <CardText>LinkedIn</CardText>
+                <Icon src="/images/linkedin.svg" alt="linkedIn" />
+                <CardText YellowHover>LinkedIn</CardText>
               </FlexColumn>
             </FlexBetween>
           </a>
@@ -47,8 +49,8 @@ export default function SoMe() {
           <a href="https://github.com/markusskov">
             <FlexBetween>
               <FlexColumn>
-                <Icon src="/images/github-grey.svg" alt="html" />
-                <CardText>Github</CardText>
+                <Icon src="/images/github-grey.svg" alt="Github" />
+                <CardText YellowHover>Github</CardText>
               </FlexColumn>
             </FlexBetween>
           </a>
@@ -57,8 +59,8 @@ export default function SoMe() {
           <a href="https://www.instagram.com/designbymarkus/?hl=en">
             <FlexBetween>
               <FlexColumn>
-                <Icon src="/images/instagram.svg" alt="html" />
-                <CardText>Instagram</CardText>
+                <Icon src="/images/instagram.svg" alt="Instagram" />
+                <CardText YellowHover>Instagram</CardText>
               </FlexColumn>
             </FlexBetween>
           </a>
