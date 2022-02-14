@@ -4,7 +4,7 @@ import H1 from '../text/Title';
 import TopCards from '../cards/TopCard';
 import Work from './Work';
 import CardTitle from '../text/CardTitle';
-import CardText from '../text/cardText';
+import CardText from '../text/CardText';
 import CardWrapper from '../cards/CardWrapper';
 
 const BottomCard = styled.section`
