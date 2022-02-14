@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import IntroImage from '../intro/IntroImage';
 import AboutText from './AboutText';
 
 const IntroWrapper = styled.div`
@@ -16,12 +15,27 @@ const IntroWrapper = styled.div`
   
 `}
 `;
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+const HeaderImg = styled.img`
+  object-fit: contain;
+  height: 90%;
+  width: 90%;
+`;
 
 export default function AboutSection() {
   return (
     <IntroWrapper>
       <AboutText />
-      <IntroImage />
+      <ImageWrapper>
+        <HeaderImg src="/images/introimage.svg" alt="Intro-Image" />
+      </ImageWrapper>
     </IntroWrapper>
   );
 }

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import IntroText from './IntroText';
-import IntroImage from '../intro/IntroImage';
 
 const IntroWrapper = styled.div`
   margin-top: 3rem;
@@ -16,12 +15,27 @@ const IntroWrapper = styled.div`
   
 `}
 `;
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+const HeaderImg = styled.img`
+  object-fit: contain;
+  height: 90%;
+  width: 90%;
+`;
 
 export default function Intro() {
   return (
     <IntroWrapper>
       <IntroText />
-      <IntroImage />
+      <ImageWrapper>
+        <HeaderImg src="/images/introimage.svg" alt="Intro-Image" />
+      </ImageWrapper>
     </IntroWrapper>
   );
 }
