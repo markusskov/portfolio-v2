@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
 import CardWrapper from '../cards/CardWrapper';
 import TopCards from '../cards/TopCard';
 import CardText from '../text/cardText';

@@ -46,7 +46,7 @@ export default function Experience() {
           <FlexBetween>
             <FlexColumn>
               <CardText>
-                2022 - Now | <b>Junior Fron-end Developer @VG</b>
+                2022 - Now | <b>Junior Front-end Developer @VG</b>
               </CardText>
               <CardText>
                 2020 - 2022 | <b>Student in Front-end Development @Noroff</b>
