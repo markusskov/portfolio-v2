@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 import NavItems from './NavLinks';
-import Link from 'next/link';
 import media from 'styled-media-query';
 
 const navlinks = [
-  { name: 'Home', href: '/#', current: true },
-  { name: 'Projects', href: '/#projects', current: false },
-  { name: 'Skills', href: '/#skills', current: false },
-  { name: 'About', href: '/about', current: false },
+  { name: 'Home', href: '/#' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Skills', href: '/#skills' },
+  { name: 'About', href: '/about' },
 ];
 
 const Icon = styled.img`
-  padding-right: 15px;
-  margin-bottom: 0.5rem;
   height: 20px;
   width: 40px;
   object-fit: contain;
