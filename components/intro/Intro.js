@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 import IntroText from './IntroText';
-import IntroImage from './introImage';
+import IntroImage from './IntroImage';
 
 const IntroWrapper = styled.div`
   margin-top: 3rem;

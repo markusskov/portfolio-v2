@@ -7,7 +7,7 @@ const CardText = styled.p`
   color: var(--color-white);
   line-height: 22px;
   margin-top: 1rem;
-  max-width: 80%;
+  
 `;
 
 export default CardText;
