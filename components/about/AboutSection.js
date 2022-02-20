@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import AboutText from './AboutText';
+import styled from "styled-components";
+import media from "styled-media-query";
+import AboutText from "./AboutText";
 
 const IntroWrapper = styled.div`
   margin-top: 3rem;
@@ -10,7 +10,8 @@ const IntroWrapper = styled.div`
   padding: 0 2rem;
   gap: 2rem;
 
-  ${media.lessThan('medium')`
+  // NOTE: You should always code mobile first.
+  ${media.lessThan("medium")`
   flex-direction: column-reverse;
   
 `}
