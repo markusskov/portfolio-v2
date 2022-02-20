@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import CardWrapper from '../cards/CardWrapper';
-import TopCards from '../cards/TopCard';
-import CardText from '../text/CardText';
-import H1 from '../text/Title';
+import styled from "styled-components";
+import CardWrapper from "../cards/CardWrapper";
+import TopCards from "../cards/TopCard";
+import CardText from "../text/CardText";
+import H1 from "../text/Title";
 
 const Wrapper = styled.section`
   margin: 2rem 1rem;
@@ -35,6 +35,7 @@ export default function SoMe() {
     <Wrapper id="SoMe">
       <H1>Get to know me better</H1>
       <CardWrapper>
+        {/* TODO: DRY - use map */}
         <TopCards>
           <a href="https://no.linkedin.com/in/markusskov">
             <FlexBetween>

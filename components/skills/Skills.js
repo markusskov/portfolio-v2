@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import CardWrapper from '../cards/CardWrapper';
-import TopCards from '../cards/TopCard';
-import CardText from '../text/CardText';
-import H1 from '../text/Title';
+import styled from "styled-components";
+import media from "styled-media-query";
+import CardWrapper from "../cards/CardWrapper";
+import TopCards from "../cards/TopCard";
+import CardText from "../text/CardText";
+import H1 from "../text/Title";
 
 const Wrapper = styled.section`
   margin: 2rem 1rem;
@@ -31,29 +31,40 @@ const Icon = styled.img`
   padding-right: 15px;
   margin-bottom: 0.5rem;
   height: 30px;
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   padding-right: 5px;
   
 `};
 `;
 
 export default function Skills() {
+  const skills = [
+    {
+      title: "HTML",
+      description:
+        "Writing good semantic code is essential for good SEO optimalization.",
+      iconUrl: "/images/html-yellow.svg",
+      iconAlt: "html",
+    },
+  ];
+
   return (
     <Wrapper id="skills">
       <H1>Skills</H1>
       <CardWrapper>
-        <TopCards>
-          <FlexBetween>
-            <FlexColumn>
-              <Icon src="/images/html-yellow.svg" alt="html" />
-              <Skill>HTML</Skill>
-              <CardText>
-                Writing good semantic code is essential for good SEO
-                optimalization.
-              </CardText>
-            </FlexColumn>
-          </FlexBetween>
-        </TopCards>
+        {skills.map((skill) => (
+          <TopCards>
+            <FlexBetween>
+              <FlexColumn>
+                <Icon src={skill.iconUrl} alt={skill.iconAlt} />
+                <Skill>{skill.title}</Skill>
+                <CardText>{skill.description}</CardText>
+              </FlexColumn>
+            </FlexBetween>
+          </TopCards>
+        ))}
+
+        {/* TODO: DRY - use map */}
         <TopCards>
           <FlexBetween>
             <FlexColumn>

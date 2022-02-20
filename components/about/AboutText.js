@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import Button from '../button/Button';
-import H1 from '../text/Title';
+import styled from "styled-components";
+import media from "styled-media-query";
+import Button from "../button/Button";
+import H1 from "../text/Title";
 
 const TextWrapper = styled.div`
   flex-direction: column;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   justify-content: center;
   align-items: center;
   
@@ -22,7 +22,7 @@ const Para = styled.p`
   margin: 1rem 0;
   max-width: 900px;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   text-align:center;
   
 `}
@@ -32,7 +32,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   margin 1rem 0;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   align-items: center;
   justify-content: center;
 `}
@@ -53,7 +53,10 @@ export default function AboutText() {
         learning to code react / NextJS to take things to the next level.
       </Para>
       <ButtonWrapper>
-        <Button href="#">Contact Me</Button>
+        {/* NOTE: You should a mail to link  https://css-tricks.com/snippets/html/mailto-links/ */}
+        <Button href="mailto:someone@yoursite.com?subject=Looking to work together">
+          Contact Me
+        </Button>
       </ButtonWrapper>
     </TextWrapper>
   );
